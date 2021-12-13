@@ -4,9 +4,10 @@ public class Dice
 
     public Dice()
     {
-        int diceRolled = (int) (Math.random() * 9) ;
+        diceRolled = (int) (Math.random() * 6) + 1 ;
     }
 
+    //checks if the user's guess is equal to the actual guess of the rolled dice.
     public boolean checkGuess(int guess)
     {
         if (guess == diceRolled)
@@ -25,7 +26,4 @@ public class Dice
     }
 
     //setters
-    public void setDiceRolled(int diceRolled) {
-        this.diceRolled = (int) (Math.random() * 6) + 1;
-    }
 }
